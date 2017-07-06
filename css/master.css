@@ -41,6 +41,16 @@ button {
   padding: 1em;
 }
 
+button:active {
+  outline: 0;
+  -webkit-transform: scale(.95);
+          transform: scale(.95);
+}
+
+button:hover {
+  background-color: #d0ffd0;
+}
+
 form {
   background-color: white;
   border: 1px solid #e0e0e0;
@@ -64,6 +74,15 @@ textarea {
   resize: none;
 }
 
+footer {
+  bottom: 0;
+  height: 100px;
+  margin-bottom: 2px;
+  position: absolute;
+  right: 1em;
+  width: 100px;
+}
+
 .form-container {
   margin: 0 auto;
   position: relative;
@@ -71,7 +90,20 @@ textarea {
 }
 
 .your-logo {
+  height: 100px;
   position: absolute;
-  bottom: 0;
-  right: 1em;
+}
+
+.sent {
+  background-color: #565656;
+  color: lightgreen;
+  margin: 0;
+  padding: 0 0 1em 2em;
+}
+
+.error {
+  background-color: #565656;
+  color: red;
+  margin: 0;
+  padding: 0 0 1em 2em;
 }
